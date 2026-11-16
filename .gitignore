@@ -12,3 +12,9 @@
 # OS files
 .DS_Store
 Thumbs.db
+
+# Private project context & assets
+template_assets/
+revget-context.md
+PROJECT_STATUS.md
+*.pdf
