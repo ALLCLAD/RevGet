@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "visual-qa": "node scripts/visual-qa.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -24,8 +25,12 @@
     "@angular/build": "^21.2.24",
     "@angular/cli": "^21.2.24",
     "@angular/compiler-cli": "^21.2.0",
+    "@tailwindcss/postcss": "^4.3.5",
     "jsdom": "^28.0.0",
+    "postcss": "^8.5.33",
     "prettier": "^3.8.1",
+    "puppeteer": "^25.17.0",
+    "tailwindcss": "^4.3.5",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
   }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #F9F8F6;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      padding: 40px;
+    }
+  </style>
+</head>
+<body class="bg-[#F9F8F6]">
+  <h2 class="text-xl font-bold mb-6 text-gray-800">Test Reproduction Purement Textuelle (HTML + Tailwind) vs img.png</h2>
+  
+  <div class="grid grid-cols-2 gap-8 max-w-4xl">
+    <!-- RÉFÉRENCE ORIGINALE -->
+    <div class="bg-[#f0eee9] p-6 rounded-2xl border border-gray-300">
+      <h3 class="text-xs uppercase font-bold text-gray-500 mb-4">1. Référence img.png (ScrewFast)</h3>
+      <div class="bg-[#F9F8F6] p-6 rounded-xl flex items-center justify-center min-h-[100px]">
+        <img class="h-16 w-auto object-contain" src="../../img.png" alt="Reference img.png" />
+      </div>
+    </div>
+
+    <!-- REPRODUCTION TEXTUELLE HTML + TAILWIND -->
+    <div class="bg-[#f0eee9] p-6 rounded-2xl border-2 border-emerald-500">
+      <h3 class="text-xs uppercase font-bold text-emerald-700 mb-4">2. Reproduction Textuelle Pure (Rev / Get + Stripes SVG)</h3>
+      <div class="bg-[#F9F8F6] p-6 rounded-xl flex items-center justify-center min-h-[100px]">
+        <!-- COMPOSANT LOGO TEXTUEL -->
+        <div class="flex flex-col select-none leading-none">
+          <!-- Mot 1 (Haut) : Rev décalé -->
+          <div class="flex items-center pl-2.5 pb-0.5">
+            <span class="text-neutral-800 font-black text-2xl tracking-tighter">Rev</span>
+          </div>
+          <!-- Mot 2 (Bas) : Get aligné à gauche + barres ScrewFast calées à droite -->
+          <div class="flex items-center gap-1.5">
+            <span class="text-neutral-800 font-black text-2xl tracking-tighter">Get</span>
+            <!-- 3 barres obliques + flèche ScrewFast -->
+            <svg class="h-4 w-auto text-amber-500" viewBox="0 0 250 85" fill="currentColor">
+              <rect width="78.9" height="18.5" x="0" y="55" rx="9.2" transform="rotate(-43 0 55)" />
+              <rect width="78.9" height="18.5" x="50" y="55" rx="9.2" transform="rotate(-43 50 55)" />
+              <rect width="78.9" height="18.5" x="100" y="55" rx="9.2" transform="rotate(-43 100 55)" />
+              <rect width="28.5" height="18.5" x="150" y="55" rx="9.2" transform="rotate(-43 150 55)" />
+              <path d="M230 28c7 2.6 6.9 12.6-.2 15l-19 6.5c-5.2 1.8-10.7-2.1-10.6-7.7l.2-13.5c.1-5.5 5.6-9.3 10.8-7.4l18.8 7.1Z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VARIANTE ALL-CAPS TEXTUELLE -->
+    <div class="bg-[#f0eee9] p-6 rounded-2xl border border-gray-300">
+      <h3 class="text-xs uppercase font-bold text-gray-500 mb-4">3. Variante Textuelle REV / GET (All-Caps)</h3>
+      <div class="bg-[#F9F8F6] p-6 rounded-xl flex items-center justify-center min-h-[100px]">
+        <div class="flex flex-col select-none leading-none">
+          <div class="flex items-center pl-3 pb-0.5">
+            <span class="text-neutral-800 font-black text-2xl tracking-tighter uppercase">REV</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <span class="text-neutral-800 font-black text-2xl tracking-tighter uppercase">GET</span>
+            <svg class="h-4 w-auto text-amber-500" viewBox="0 0 250 85" fill="currentColor">
+              <rect width="78.9" height="18.5" x="0" y="55" rx="9.2" transform="rotate(-43 0 55)" />
+              <rect width="78.9" height="18.5" x="50" y="55" rx="9.2" transform="rotate(-43 50 55)" />
+              <rect width="78.9" height="18.5" x="100" y="55" rx="9.2" transform="rotate(-43 100 55)" />
+              <rect width="28.5" height="18.5" x="150" y="55" rx="9.2" transform="rotate(-43 150 55)" />
+              <path d="M230 28c7 2.6 6.9 12.6-.2 15l-19 6.5c-5.2 1.8-10.7-2.1-10.6-7.7l.2-13.5c.1-5.5 5.6-9.3 10.8-7.4l18.8 7.1Z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VARIANTE EN LIGNE (REVGET ///) -->
+    <div class="bg-[#f0eee9] p-6 rounded-2xl border border-gray-300">
+      <h3 class="text-xs uppercase font-bold text-gray-500 mb-4">4. Variante Horizontale Inline</h3>
+      <div class="bg-[#F9F8F6] p-6 rounded-xl flex items-center justify-center min-h-[100px]">
+        <div class="flex items-center gap-2 select-none">
+          <span class="text-neutral-800 font-black text-3xl tracking-tighter">REV<span class="text-amber-500">GET</span></span>
+          <svg class="h-5 w-auto text-amber-500" viewBox="0 0 250 85" fill="currentColor">
+            <rect width="78.9" height="18.5" x="0" y="55" rx="9.2" transform="rotate(-43 0 55)" />
+            <rect width="78.9" height="18.5" x="50" y="55" rx="9.2" transform="rotate(-43 50 55)" />
+            <rect width="78.9" height="18.5" x="100" y="55" rx="9.2" transform="rotate(-43 100 55)" />
+            <rect width="28.5" height="18.5" x="150" y="55" rx="9.2" transform="rotate(-43 150 55)" />
+            <path d="M230 28c7 2.6 6.9 12.6-.2 15l-19 6.5c-5.2 1.8-10.7-2.1-10.6-7.7l.2-13.5c.1-5.5 5.6-9.3 10.8-7.4l18.8 7.1Z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
