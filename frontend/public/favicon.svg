@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond conteneur ScrewFast officiel (rounded container rx="100", fond charbon minéral #262626) -->
+  <rect width="512" height="512" rx="100" fill="#262626"/>
+  
+  <style>
+    .revget-brand-text {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      fill: #FFFFFF;
+      letter-spacing: -4px;
+    }
+  </style>
+  
+  <!-- Ligne 1 : "Rev" décalé au-dessus de Get -->
+  <text class="revget-brand-text" x="90" y="222" font-size="118">Rev</text>
+  
+  <!-- Ligne 2 : "Get" aligné à gauche -->
+  <text class="revget-brand-text" x="65" y="342" font-size="118">Get</text>
+  
+  <!-- Ligne 2 (suite) : Barres obliques et flèche ScrewFast / Revget en ambre officiel #F59E0B -->
+  <g transform="translate(270, 266) scale(0.72)">
+    <rect width="78.9" height="18.5" x="0" y="55" rx="9.2" transform="rotate(-43 0 55)" fill="#F59E0B" />
+    <rect width="78.9" height="18.5" x="50" y="55" rx="9.2" transform="rotate(-43 50 55)" fill="#F59E0B" />
+    <rect width="78.9" height="18.5" x="100" y="55" rx="9.2" transform="rotate(-43 100 55)" fill="#F59E0B" />
+    <rect width="28.5" height="18.5" x="150" y="55" rx="9.2" transform="rotate(-43 150 55)" fill="#F59E0B" />
+    <path d="M230 28c7 2.6 6.9 12.6-.2 15l-19 6.5c-5.2 1.8-10.7-2.1-10.6-7.7l.2-13.5c.1-5.5 5.6-9.3 10.8-7.4l18.8 7.1Z" fill="#F59E0B" />
+  </g>
+</svg>

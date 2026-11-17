@@ -11,6 +11,10 @@
 - **Auditabilité :** Entités JPA avec Audit automatique (@CreatedDate, @CreatedBy, etc.).
 
 ## 2. UX, Gamification & Design (Frontend)
+- **Structure Formelle des Composants (Séparation Stricte Obligatoire) :** Interdiction des templates inline (`template: `...``). Tout composant DOIT obligatoirement être découpé en fichiers séparés :
+  - `[nom].component.ts` : Logique TypeScript exclusive (Signals, Services injectés, `templateUrl: './[nom].component.html'`, `styleUrl: './[nom].component.scss'`).
+  - `[nom].component.html` : Balisage HTML pur avec le nouveau control-flow `@if`, `@for`, et classes Tailwind CSS.
+  - `[nom].component.scss` : Fichier de styles dédié pour les éventuelles règles locales.
 - **Design System :** Utilisation de Spartan.ng, Tailwind CSS, et composants Standalone Angular 21 (Control Flow @if/@for).
 - **Ressources UI :** Pour toute création de composant visuel, consulte OBLIGATOIREMENT le dossier `template_assets/` à la racine pour t'inspirer du design et récupérer le code HTML/CSS de base.
 - **Réactivité :** RxJS pour les flux asynchrones complexes (Timer Mode Sprint) et Angular Signals pour l'état local synchrone (Score, XP).
@@ -61,9 +65,9 @@
   - Démarche OAuth 2.0 standard : clic utilisateur redirigeant vers la page Google ou déclenchant le bouton officiel, avec capture du token JWT (`id_token`) dans `ngOnInit` via URL hash.
 
 ## 7. Bilan des Réalisations Validées (Landing Page & Google Auth)
-- **Hero Section :** Intégration de l'image réelle `hero.jpg`, titre fort sur la restitution active, bouton d'action sombre ergonomique ouvrant le menu déroulant Google.
+- **Hero Section :** Objets de travail et d'étude détourés flottants (`hero.png`), sans cadre rectangulaire, avec ombres portées naturelles se fondant directement sur le fond de page ScrewFast.
 - **Section Fonctionnalités (`#features`) :** 4 blocs produits concrets (Génération IA ultra-rapide, Mode sprint chronométré, Suivi de progression & XP, Rétroaction pédagogique immédiate).
-- **Section Méthode (`#showcase`) :** Intégration de l'image de travail réelle `showcase.jpg`, bloc explicatif sur la mémorisation active par QCM, cube filaire repositionné pour une lisibilité optimale.
+- **Section Méthode (`#showcase`) :** Éléments de révision détourés flottants (`showcase.png`), ordinateur avec interface de rappel actif et carnet de notes se fondant harmonieusement dans le conteneur ScrewFast.
 - **Section FAQ (`#faq`) :** 5 questions/réponses pertinentes sur le RAG, les formats de documents (PDF, Word), la confidentialité des cours et le ciblage par chapitres.
 - **Menu Déroulant Connexion :** Format minimaliste épuré (`bg-white rounded-xl shadow-lg border border-gray-100 p-2 z-50`) hébergeant exclusivement le bouton officiel Google `renderButton` en mode outline 240px.
 - **Navigation & Défilement :** Smooth scroll avec offset 96px sur Accueil, Fonctionnalités, Méthode, FAQ, surbrillance dynamique du lien actif, et menu mobile responsive.

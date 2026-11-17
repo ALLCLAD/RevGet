@@ -13,7 +13,8 @@ import { AuthService } from '../../../core/auth/auth.service';
         <div class="flex flex-col">
           <!-- Logo & Brand Header -->
           <div class="h-20 flex items-center px-6 border-b border-gray-100">
-            <a routerLink="/dashboard" class="flex items-center outline-hidden">
+            <a routerLink="/dashboard" class="flex items-center gap-2.5 outline-hidden">
+              <img src="icon.svg" alt="Revget" class="w-8 h-8 rounded-lg shadow-xs" />
               <span class="text-2xl font-black tracking-tighter uppercase leading-none select-none">
                 <span class="text-gray-900">REV</span><span class="text-orange-500">GET</span>
               </span>

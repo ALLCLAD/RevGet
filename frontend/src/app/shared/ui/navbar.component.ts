@@ -10,10 +10,8 @@ import { AuthService } from '../../core/auth/auth.service';
     <header class="sticky top-0 z-50 flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-neutral-900/90 backdrop-blur-md border-b border-neutral-800 text-sm py-3 px-4 sm:px-6 lg:px-8">
       <nav class="max-w-7xl w-full mx-auto flex items-center justify-between">
         <!-- Logo -->
-        <a routerLink="/dashboard" class="flex items-center gap-2 text-xl font-bold text-white tracking-tight">
-          <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-orange-500 text-neutral-950 font-black text-base shadow-sm">
-            R
-          </span>
+        <a routerLink="/dashboard" class="flex items-center gap-2.5 text-xl font-bold text-white tracking-tight">
+          <img src="icon.svg" alt="Revget Logo" class="w-8 h-8 rounded-lg shadow-sm" />
           <span>Rev<span class="text-orange-400">.get()</span></span>
         </a>
 
